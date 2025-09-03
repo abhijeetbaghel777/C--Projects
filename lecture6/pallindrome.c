@@ -10,5 +10,8 @@ void main(){
         num=num/10;;
         
     }
-    printf("%d",rev);
+    if(rev==num)
+    printf("\nIs pallindrome");
+    else
+    printf("\nIs not pallindrome");
 }
