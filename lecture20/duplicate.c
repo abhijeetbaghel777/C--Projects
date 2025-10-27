@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char str[]="hello";
+    int ln=strlen(str);
+    int count=0;
+    for (int i = 0; i < ln-1; i++)
+    {
+        for (int j= 0; j < ln; j++)
+        {
+           if(str[i]==str[j]){
+            count++;
+           }
+        }
+        if (count==0)
+        {
+            printf("%c",str[i]);
+        }
+        
+    }
+
+    
+}
